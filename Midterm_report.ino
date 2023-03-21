@@ -1,3 +1,4 @@
+//Thermostat and Hygromter using M5stack -CPE term project NYUAD, Spring 2023
 #include <M5Core2.h>
 #include "DHT.h"
 #include <WiFi.h>
@@ -79,8 +80,8 @@ void loop() {
     }
 currentMillis=millis();
 if ((currentMillis-lastsensorread)>1000){   //read temperature and humidity every 1 second
-    temperature = random(25,40)+calibrated_temperature; //Read temperature from sensor
-    humidity = random(0,101)+calibrated_humidity;     //Read humidity from sensor 
+    temperature = random(25,40)+calibrated_temperature; //Random number generator for temperature 
+    humidity = random(0,101)+calibrated_humidity;     //Random number generator for humidity
     lastsensorread=millis();
     if (temperature>maxtemperature){ //check for maximum temperature
       maxtemperature=temperature;
