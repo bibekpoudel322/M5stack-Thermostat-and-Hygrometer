@@ -1,6 +1,5 @@
 //Thermostat and Hygromter using M5stack -CPE term project NYUAD, Spring 2023
 #include <M5Core2.h>
-#include "DHT.h"
 #include <WiFi.h>
 #include <cmath>
 #include <WiFiMulti.h>
