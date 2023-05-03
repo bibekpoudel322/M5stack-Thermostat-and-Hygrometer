@@ -532,6 +532,7 @@ void detailmenu(){//function to display details menu
   }
  
 }
+//Secondary heater function
  /*void secondaryheateron(){
   digitalWrite(secondaryheaterpin,HIGH);
 }
